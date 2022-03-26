@@ -14,9 +14,9 @@ Note that using export default in your .d.ts files requires esModuleInterop: tru
 
 Source: https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html
 
-Useful links:
-// How To Use Namespaces in TypeScript
+Useful links:  
+How To Use Namespaces in TypeScript
 https://www.digitalocean.com/community/tutorials/how-to-use-namespaces-in-typescript
 
-// Adding TypeScript declarations to vanilla JavaScript
+Adding TypeScript declarations to vanilla JavaScript  
 https://www.youtube.com/watch?v=sy3wISB7Wgw
