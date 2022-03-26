@@ -1,0 +1,5 @@
+# /dirname will ignore only root dir
+node_modules/
+dist/
+DependencyInversionPrinciple/
+LiskovSubstitutionPrinciple/

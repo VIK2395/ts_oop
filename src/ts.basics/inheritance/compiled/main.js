@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var cat_1 = require("./cat");
+var cat1 = new cat_1.Cat('Masanao', { hasBrain: true });
+var cat2 = new cat_1.Cat('Emanuel', { canReproduce: true });
+console.dir(cat1);
+console.dir(cat2);
+cat1.setCommon({ hasBrain: false });
+console.dir(cat1);
+console.dir(cat2);
+var prototypeOfCat1 = Object.getPrototypeOf(cat1);
+var prototypeOfCat2 = Object.getPrototypeOf(cat2);
+console.log(prototypeOfCat1);
+console.dir(prototypeOfCat2);
+console.log(prototypeOfCat1 === prototypeOfCat2);
