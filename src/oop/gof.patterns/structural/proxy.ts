@@ -31,12 +31,12 @@ class YouTubeVideoLoader implements IYouTubeVideoLoader {
 
 // proxy service
 class CachedYouTubeVideoLoader implements IYouTubeVideoLoader {
-  private service: YouTubeVideoLoader;
   private cache: Map<string, Video>;
+  private service: YouTubeVideoLoader;
 
   constructor(service: YouTubeVideoLoader) {
-    this.service = service;
     this.cache = new Map();
+    this.service = service;
   }
 
   loadVideo(url: string): Video {
