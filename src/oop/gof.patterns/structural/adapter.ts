@@ -51,7 +51,7 @@ class AnalyticsSrvice implements IAnalyticsService {
   fetchAnalytics(options: XmlOptions): XmlAnalytics {
     const analytics: XmlAnalytics = {
       options,
-      source: 'analytics service data',
+      source: 'Data received from AnalyticsService',
       analytics: [1, 2, 3],
     };
     return analytics;
@@ -62,8 +62,8 @@ class FancyAnalyticsSrvice {
   fetchData(options: JsonOptions): JsonAnalytics {
     const analytics: JsonAnalytics = {
       options,
-      source: 'fancy analytics service data',
-      analytics: [4, 5, 6],
+      source: 'Data received from FancyAnalyticsService',
+      analytics: [40, 50, 60],
     };
     return analytics;
   }

@@ -15,63 +15,54 @@ interface ITool {
 }
 
 class SelectionTool implements ITool {
-  // @Override
   mouseDown(): void {
     console.log('Selection icon');
   }
-  // Override
+
   mouseUp(): void {
     console.log('Draw a dashed rectangle');
   }
 
-  // Override
   nextTool(canvas: Canvas): void {
     canvas.setTool(new BrushTool());
   }
 
-  // Override
   prevTool(): void {
     console.log('This is first tool in the list');
   }
 }
 
 class BrushTool implements ITool {
-  // @Override
   mouseDown(): void {
     console.log('Brush icon');
   }
-  // Override
+
   mouseUp(): void {
     console.log('Draw a line');
   }
 
-  // Override
   nextTool(canvas: Canvas): void {
     canvas.setTool(new EraserTool());
   }
 
-  // Override
   prevTool(canvas: Canvas): void {
     canvas.setTool(new SelectionTool());
   }
 }
 
 class EraserTool implements ITool {
-  // @Override
   mouseDown(): void {
     console.log('Eraser icon');
   }
-  // Override
+
   mouseUp(): void {
     console.log('Erase something');
   }
 
-  // Override
   nextTool(): void {
     console.log('This is last tool in the list');
   }
 
-  // Override
   prevTool(canvas: Canvas): void {
     canvas.setTool(new BrushTool());
   }

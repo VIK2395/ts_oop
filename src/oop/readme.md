@@ -11,3 +11,7 @@ YAGNI => You aren't gonna need it
 
 DDD => Domain-driven design  
 TDD => Test-driven development
+
+Composition vs inheritance  
+Google => composition programming  
+https://www.geeksforgeeks.org/composition-in-java/

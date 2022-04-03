@@ -1,12 +1,5 @@
 export {};
 
-// make an configured instance copy
-
-// https://www.youtube.com/watch?v=bTiAfLbmsnY
-// https://refactoring.guru/design-patterns/prototype
-
-export {};
-
 type Type = 'sedan' | 'coupe' | 'hatchback' | 'Roadster';
 
 class Car {
@@ -35,8 +28,10 @@ class Car {
   //   return new Car(this);
   // }
   // This method mistakingly considered as a property by ts compiler (***)
-  clone(): string {
-    return 'loh';
+  clone(): this {
+    // 'this' type => binds subclass type hardly, not this superclass
+    // https://www.digitalocean.com/community/tutorials/how-to-use-classes-in-typescript
+    return Object.create(this);
   }
 }
 

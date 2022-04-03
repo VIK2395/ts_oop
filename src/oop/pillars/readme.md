@@ -20,6 +20,9 @@ incapsulation
 access modifiers + getters, setters with validation (that is all)  
 preventing direct access to properties to protect aplication from violation  
 https://www.w3schools.com/java/java_encapsulation.asp
+Nemchinsky  
+Each part of a system needs to be considered as a closed entity, and access from outside to the system  
+should be done with the methods of the system itself.
 
 abstraction  
 hide unessary details in our classes to reduce complexity  
@@ -38,3 +41,5 @@ use common base class as type, which allows children with different behaviours
 espesially with abstract classes with abstact methods | properties  
 interfaces are also used as base type  
 https://www.w3schools.com/java/java_polymorphism.asp
+Nemchinsky  
+Replace if statements with polimorphism. Possible only with inheritance.

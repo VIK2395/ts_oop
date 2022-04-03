@@ -53,7 +53,6 @@ class UserExistsHandler extends Handler {
     this.database = database;
   }
 
-  // @Override
   handle(userName: string, userPassword: string): boolean {
     if (!this.database.userExists(userName)) {
       console.log('userName was not found');
@@ -71,7 +70,6 @@ class UserPasswordValidHandler extends Handler {
     this.database = database;
   }
 
-  // @Override
   handle(userName: string, userPassword: string): boolean {
     if (!this.database.isUserPasswordValid(userName, userPassword)) {
       console.log('Invalid userPassword');
@@ -82,7 +80,6 @@ class UserPasswordValidHandler extends Handler {
 }
 
 class AdminRoleHandler extends Handler {
-  // @Override
   handle(userName: string, userPassword: string): boolean {
     if (userName === 'adminUser') {
       console.log('Loading Admin page...');

@@ -30,13 +30,13 @@ Structural:
 Behavioral:
 
 - Chain of responsibility +
-- Command
-- Interpreter
-- Iterator
-- Mediator
+- Command +
+- Interpreter -
+- Iterator +
+- Mediator +
 - Memento +
 - Observer +
 - State +
 - Strategy +
-- Template method
-- Visitor
+- Template method +
+- Visitor +

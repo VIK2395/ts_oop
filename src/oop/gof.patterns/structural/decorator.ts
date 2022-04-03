@@ -62,7 +62,7 @@ class EncryptionDecorator extends BaseDataSourceDecorator {
 }
 
 class CompressionDecorator extends BaseDataSourceDecorator {
-  write(data: string): void {
+  write(data: Data): void {
     const compressedData: Data = `COMPRESSED_${data}`;
     super.write(compressedData);
   }

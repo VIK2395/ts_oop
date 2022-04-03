@@ -30,7 +30,6 @@ class EmailMessageListener implements IEventListener {
     this.email = email;
   }
 
-  // @Override
   update(action: Action): void {
     switch (action.type) {
       case 'NEW_ITEM':
@@ -54,7 +53,6 @@ class MobileAppListener implements IEventListener {
     this.userName = userName;
   }
 
-  // @Override
   update(action: Action): void {
     switch (action.type) {
       case 'NEW_ITEM':

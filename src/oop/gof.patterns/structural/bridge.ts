@@ -5,14 +5,14 @@ export {};
 // https://refactoring.guru/design-patterns/bridge
 
 // Escape creating each dimension class combination by extracting one of the dimension
-// into separate class hierarchy and injecting it in abstract layer
+// into separate class hierarchy and injecting it in abstract layer.
 
 // Problem with inheritance: extending a class in two or more independent dimensions
-// lead to number of class combinations grows in geometric progression.
+// lead to number of class combinations to grow in geometric progression.
 // Solution: switch from inheritance to composition.
 // Extract one of the dimensions into a separate class hierarchy.
 
-// Note that we’re not talking about interfaces or abstract classes from your programming language.
+// *Note that we’re not talking about interfaces or abstract classes from your programming language.
 // These aren’t the same things.
 
 // We can have different brand controles and different devices to be controlled => Many combinations.
@@ -65,7 +65,7 @@ class Tv implements IDevice {
   }
 }
 
-// Abstraction layer => Provides high-level control logic.
+// *Abstraction layer => Provides high-level control logic.
 // Wrapps a concrete implementation.
 // Delegates all work to the concrete implementation.
 class RemoteControl {

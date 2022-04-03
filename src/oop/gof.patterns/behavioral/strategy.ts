@@ -8,21 +8,18 @@ interface IStrategy {
 }
 
 class OperationAdd implements IStrategy {
-  // @Override
   doOperation(a: number, b: number): number {
     return a + b;
   }
 }
 
 class OperationSubstract implements IStrategy {
-  // @Override
   doOperation(a: number, b: number): number {
     return a - b;
   }
 }
 
 class OperationMultiply implements IStrategy {
-  // @Override
   doOperation(a: number, b: number): number {
     return a * b;
   }
@@ -35,6 +32,10 @@ class Context {
     this.strategy = strategy;
   }
 
+  setStrategy(strategy: IStrategy): void {
+    this.strategy = strategy;
+  }
+
   executeStrategy(a: number, b: number): number {
     return this.strategy.doOperation(a, b);
   }
@@ -44,7 +45,7 @@ let context: Context = new Context(new OperationAdd());
 
 console.log('10 + 5 = ' + context.executeStrategy(10, 5));
 
-context = new Context(new OperationSubstract());
+context.setStrategy(new OperationSubstract());
 
 console.log('10 - 5 = ' + context.executeStrategy(10, 5));
 

@@ -5,7 +5,7 @@ export {};
 // https://refactoring.guru/design-patterns/composite
 
 // Make sense only when classes can be represented as a tree.
-// Composite objects into tree structure and then ran throught this structure from top to bottom.
+// Composite objects into tree structure and then ran throught this structure from top to bottom, like recursion.
 // Due to the same interface, the client doesn’t know whether it’s working with a simple object
 // or a set of objects (compound object).
 
