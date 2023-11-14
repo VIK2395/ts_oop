@@ -9,18 +9,18 @@ GRASP состоит из 5 основных и 4 дополнительных �
 
 Основные шаблоны:
 
-- Information Expert
-- Creator
-- Controller
-- Low Coupling | Loose Coupling
-- High Cohesion | Tight Cohesion
+1. Information Expert
+2. Creator
+3. Controller
+4. Low Coupling | Loose Coupling
+5. High Cohesion | Tight Cohesion
 
 Дополнительные шаблоны:
 
-- Polymorphism
-- Pure Fabrication
-- Indirection
-- Protected Variations
+6. Polymorphism
+7. Pure Fabrication
+8. Indirection
+9. Protected Variations
 
 Nemchinsky  
 https://www.youtube.com/watch?v=pswA3Prf_YQ&feature=youtu.be
