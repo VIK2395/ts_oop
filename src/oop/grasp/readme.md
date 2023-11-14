@@ -36,7 +36,7 @@ https://www.youtube.com/watch?v=pswA3Prf_YQ&feature=youtu.be
    Приклади чистої видумки: promise, socket, array, event emitter, timeout.
    https://www.youtube.com/watch?v=CV577a0RHBM&list=PLHhi8ymDMrQby8kXxsz2-J6-lsv0ilEg2&index=4
    Nemchinsky says to skip and forget this at all.
-8. Call classes through interfaces, not directly. The same as IoC.
+8. Call classes through interfaces, not directly. The same as IoC. The same as Dependecy inversion principle.
 
 Звернення до обєкта через інтерфейс, що позволяє розвернути залежність. Тепер не сам обєкт залежить від іншого обєкта, тепер другий обєкт залежить від свого інтерфейса.
 
