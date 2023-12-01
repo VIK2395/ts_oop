@@ -1,7 +1,7 @@
 IoC and DIP
 
-- IoC – Inversion of Control (Principle)
-- DIP – Dependency Inversion Principle
+- IoC – Inversion of Control (Principle) (Hollywood Principle)
+- DIP – Dependency Inversion Principle (from SOLID)
 - DI – Dependency Injection (Pattern)
 - IoC Container (a.k.a. DI Container) - DI Framework
 
