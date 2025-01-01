@@ -94,6 +94,33 @@ Functional programming (FP) is a programming paradigm centered around treating c
 
 ---
 
+### 6.1 **Function Currying**
+Currying is the process of transforming a function with multiple arguments into a sequence of functions, each taking a single argument. This is useful for partial application, where you can fix some arguments of a function and create a new, simpler function.
+
+#### **Key Idea**
+If you have a function:
+- `f(x, y)`
+
+Currying transforms it into:
+- `f(x)(y)`
+
+#### **Python Example**
+In Python, currying is typically achieved using closures or the `functools.partial` function.
+
+##### **Manual Currying with Closures**
+```python
+def multiply(x):
+    def multiply_by_y(y):
+        return x * y
+    return multiply_by_y
+
+# Partially apply multiply
+times_two = multiply(2)
+print(times_two(5))  # Output: 10
+```
+
+---
+
 ### 7. **Recursion Over Iteration**
    - Recursion is preferred over explicit loops for repetitive tasks.
      ```python
